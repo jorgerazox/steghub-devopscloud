@@ -29,6 +29,7 @@ Use the following command to SSH into your EC2 instance from your terminal:
 ```bash
 ssh -i "your-key.pem" ec2-user@<ec2-public-ip>
 
+---
 
 ## Step 3: Update the EC2 Instance
 
@@ -37,6 +38,7 @@ Update the system's package repository to ensure you are installing the latest v
 ```bash
 sudo apt update && sudo apt upgrade -y
 
+---
 
 ## Step 4: Install Apache Web Server
 
