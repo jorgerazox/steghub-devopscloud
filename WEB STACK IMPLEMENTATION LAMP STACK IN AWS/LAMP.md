@@ -28,6 +28,7 @@ Use the following command to SSH into your EC2 instance from your terminal:
 
 ```bash
 ssh -i "your-key.pem" ec2-user@<ec2-public-ip>
+```
 
 ---
 
@@ -37,6 +38,7 @@ Update the system's package repository to ensure you are installing the latest v
 
 ```bash
 sudo apt update && sudo apt upgrade -y
+```
 
 ---
 
@@ -45,8 +47,7 @@ sudo apt update && sudo apt upgrade -y
 1. Install Apache using the following command:
 
     ```bash
-  sudo apt install apache2 -y
-
+    sudo apt install apache2 -y
     ```
 
 2. Start the Apache service:
@@ -63,7 +64,7 @@ sudo apt update && sudo apt upgrade -y
 
 4. Verify Apache is running by accessing your EC2 instance's public IP address in your browser:
 
-    ```
+    ```vbnet
     http://<ec2-public-ip>
     ```
 
