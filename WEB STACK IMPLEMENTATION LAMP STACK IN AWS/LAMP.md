@@ -20,6 +20,8 @@
    - HTTP (port 80)
 7. Review and launch the instance, and download your `.pem` key pair.
 
+![AWS EC2 Instances Ubuntu 24.04](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/AWSEC2.png)
+
 ---
 
 ## Step 2: Connect to Your EC2 Instance via SSH
