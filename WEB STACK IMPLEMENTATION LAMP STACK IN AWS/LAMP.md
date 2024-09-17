@@ -32,7 +32,7 @@ Use the following command to SSH into your EC2 instance from your terminal:
 ssh -i "your-key.pem" ec2-user@<ec2-public-ip>
 ```
 
-![AWS EC2 SSH](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/AWSSEC2SSH.png)
+![AWS EC2 Instances Ubuntu 24.04](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/AWSEC2SSH.png)
 
 
 ---
