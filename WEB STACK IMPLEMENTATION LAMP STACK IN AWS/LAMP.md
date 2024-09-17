@@ -32,6 +32,9 @@ Use the following command to SSH into your EC2 instance from your terminal:
 ssh -i "your-key.pem" ec2-user@<ec2-public-ip>
 ```
 
+![AWS EC2 SSH](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/AWSSEC2.png)
+
+
 ---
 
 ## Step 3: Update the EC2 Instance
@@ -55,20 +58,24 @@ sudo apt update && sudo apt upgrade -y
 2. Start the Apache service:
 
     ```bash
-    sudo systemctl start httpd
+    sudo systemctl start apache2
     ```
 
 3. Enable Apache to start on boot:
 
     ```bash
-    sudo systemctl enable httpd
+    sudo systemctl enable apache2
     ```
+
+![AWS EC2 LINUX APACHE](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/LApache.png)
 
 4. Verify Apache is running by accessing your EC2 instance's public IP address in your browser:
 
     ```vbnet
     http://<ec2-public-ip>
     ```
+
+![AWS EC2 LINUX APACHE](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/LApacheBrowser.png)
 
 ---
 
@@ -83,13 +90,13 @@ sudo apt update && sudo apt upgrade -y
 2. Start the MySQL service:
 
     ```bash
-    sudo systemctl start mysqld
+    sudo systemctl start mysql
     ```
 
 3. Enable MySQL to start on boot:
 
     ```bash
-    sudo systemctl enable mysqld
+    sudo systemctl enable mysql
     ```
 
 4. Secure the MySQL installation:
@@ -105,6 +112,7 @@ sudo apt update && sudo apt upgrade -y
     ```bash
     mysql -u root -p
     ```
+![AWS EC2 LINUX MYSQL](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/LAMysql.png)
 
 ---
 
@@ -129,15 +137,17 @@ sudo apt update && sudo apt upgrade -y
 1. Create a PHP info file to verify PHP is working:
 
     ```bash
-    sudo echo "<?php phpinfo(); ?>" > /var/www/html/info.php
+    sudo echo "<?php phpinfo(); ?>" > /var/www/projectlamp/index.php
     ```
 
 2. Access the following URL in your browser to view the PHP info page:
 
     ```
-    http://<ec2-public-ip>/info.php
+    http://<ec2-public-ip>/
     ```
 
     You should see a page with details about your PHP installation.
+
+![AWS EC2 LINUX PHP](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/LAMysql.png)
 
 ---
