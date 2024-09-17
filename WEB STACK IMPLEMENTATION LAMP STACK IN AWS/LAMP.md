@@ -32,7 +32,7 @@ Use the following command to SSH into your EC2 instance from your terminal:
 ssh -i "your-key.pem" ec2-user@<ec2-public-ip>
 ```
 
-![AWS EC2 SSH](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/AWSSEC2.png)
+![AWS EC2 SSH](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/AWSSEC2SSH.png)
 
 
 ---
@@ -148,6 +148,6 @@ sudo apt update && sudo apt upgrade -y
 
     You should see a page with details about your PHP installation.
 
-![AWS EC2 LINUX PHP](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/LAMysql.png)
+![AWS EC2 LINUX PHP](/WEB%20STACK%20IMPLEMENTATION%20LAMP%20STACK%20IN%20AWS/images/LAMPhp.png)
 
 ---
