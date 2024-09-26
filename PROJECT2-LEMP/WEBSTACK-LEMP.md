@@ -89,3 +89,149 @@ curl http://localhost:80
 
 ```
 ![NGINX LOCAL](/PROJECT2-LEMP/images/NginxLocalhost.png)
+
+
+## Step 5: Install MySQL
+
+1. Install MySQL using the following commands:
+
+```bash
+sudo apt install mysql-server
+```
+
+2. Log in  to the MySql Console:
+
+```bash
+sudo mysql
+```
+
+![MYSQL CONSOLE](/PROJECT2-LEMP/images/MySqlConsole.png)
+
+3.  Secure the MySQL installation:
+
+
+```bash
+sudo mysql_secure_installation
+```
+
+Follow the prompts to set a root password, remove anonymous users, disable remote root login, and remove the test database.
+
+4. To log in to MySQL as the root user, use:
+
+```bash
+
+sudo mysql -p
+
+```
+
+## Step 6: Install PHP
+PHP - NGINX ARCHITECTURE
+![PHP NGINX ARCHITECTURE](/PROJECT2-LEMP/images/PHPNGINXARCH.png)
+
+1. Install PHP and the necessary PHP modules:
+```bash
+
+sudo apt install php-fpm php-mysql
+
+```
+
+2. Configuring Nginx to Use PHP Processor:
+
+2.1 Create a directory
+
+```bash
+
+sudo mkdir /var/www/projectLEMP
+
+```
+2.2 Assign ownership to the directory:
+
+```bash
+sudo chown -R $USER:$USER /var/www/projectLEMP
+
+```
+2.3 Create a Nginx configuration file:
+
+```bash
+
+$ sudo nano /etc/nginx/sites-available/projectLEMP
+
+```
+
+```vscode
+#/etc/nginx/sites-available/projectLEMP
+
+server {
+    listen 80;
+    server_name projectLEMP www.projectLEMP;
+    root /var/www/projectLEMP;
+
+    index index.html index.htm index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
+     }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+}
+```
+
+2.4 Enable the site, check syntax error and disable default site:
+
+```bash
+
+sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
+sudo nginx -t 
+sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
+
+```
+
+2.5 Reload Nginx:
+
+```bash
+
+sudo systemctl reload nginx
+
+```
+
+2.6 Test the new website
+
+```vbnet
+http://<ec2-public-ip>:80
+
+```
+
+![NGINX SITE](/PROJECT2-LEMP/images/NewSiteNginx.png)
+
+## Step 7: Testing PHP with Nginx
+1. Set up info.php:
+
+```bash
+
+nano /var/www/projectLEMP/info.php
+
+```
+![PHP Test](/PROJECT2-LEMP/images/PHPNginxTEST.png)
+
+2. Remove the info.php:
+```bash
+
+sudo rm /var/www/projectLEMP/info.php
+
+```
+
+## Step 7: Retrieving data from MySQL database with PHP
+
+A TO DO list in PHP with data retrieved form MYSQL.
+
+![TO DO List example](/PROJECT2-LEMP/images/PHPMYSQLQuery.png)
+
+---
