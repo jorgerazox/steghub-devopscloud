@@ -129,6 +129,7 @@ WHERE column1 LIKE pattern;
 
 ### Wildcards:
 %: Represents zero or more characters.
+
 _: Represents a single character.
 
 ## 14. BETWEEN Operator
