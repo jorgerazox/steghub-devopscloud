@@ -186,7 +186,7 @@ A **RESTful API** (Representational State Transfer Application Programming Inter
 
 - **w3school:** https://www.w3schools.com/js/default.asp
 
-# ** CSS Reference**
+# **CSS Reference**
 
 - **CSS:** https://www.w3schools.com/css/default.asp
 
