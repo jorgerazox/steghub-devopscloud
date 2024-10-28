@@ -1,6 +1,6 @@
 # MERN WEB STACK - 101
 ### How does MERN stack work?
-![MERN Stack](/MERN_stack_GbyG)
+![MERN Stack](/PROJECT3-MERN/images/MERN_stack_GbyG.png)
 #### [Reference Geeks for Geeks](https://www.geeksforgeeks.org/mern-stack/)
 
 ## STEP 0 - Prerequisites
@@ -27,7 +27,7 @@ Create a **Todo** directory, the run the command:
 
     npm init
 
-![NPM init](/PROJECT3-MERN/images/todo_npm_init)
+![NPM init](/PROJECT3-MERN/images/todo_npm_init.png)
 
 ### Installing ExpressJS
 
@@ -38,16 +38,16 @@ Create a *index.js* file and install de **dotenv** module:
     touch index.js
     npm install dotenv
 
-![Index js](/PROJECT3-MERN/images/indexjs_creation)
+![Index js](/PROJECT3-MERN/images/indexjs_creation.png)
 
-![node index js](/PROJECT3-MERN/images/node_indexjs)
+![node index js](/PROJECT3-MERN/images/node_indexjs.png)
 
 Granted the proper rules to connect to the EC2 server:
-![AWS ACL](/PROJECT3-MERN/images/aws_acl_5000)
+![AWS ACL](/PROJECT3-MERN/images/aws_acl_5000.png)
 
 Check the installation:
 
-![Express Installation](/PROJECT3-MERN/images/express_setup)
+![Express Installation](/PROJECT3-MERN/images/express_setup.png)
 
 
 ### Models
@@ -55,7 +55,7 @@ Check the installation:
     npm install mongoose
     mkdir models && cd models && touch todo.js
 
-![Mongoose ](/PROJECT3-MERN/images/moongoose)
+![Mongoose ](/PROJECT3-MERN/images/moongoose.png)
     
 ### Creating endpoints for the Todo app:
 
@@ -63,31 +63,31 @@ Check the installation:
     cd routes
     touch api.js
 
-![API setup](/PROJECT3-MERN/images/api.js)
+![API setup](/PROJECT3-MERN/images/api.js.png)
 
 ### MongoDB Database
 
 DBaaS Provisioning of MongoDB Database:
-![DBaaS](/PROJECT3-MERN/images/mongodb)
+![DBaaS](/PROJECT3-MERN/images/mongodb.png)
 
 Environment variables to store information is considered a best practice to store secret data.
 
 Updating de *index.js* file:
-![indexjs update](/PROJECT3-MERN/images/indexjs_update)
+![indexjs update](/PROJECT3-MERN/images/indexjs_update.png)
 
 ### Testing the backend:
-![API GET](/PROJECT3-MERN/images/GET)
+![API GET](/PROJECT3-MERN/images/GET.png)
 
-![API POST](/PROJECT3-MERN/images/POST)
+![API POST](/PROJECT3-MERN/images/POST.png)
 
-![DELETE](/PROJECT3-MERN/images/DELETE)
+![DELETE](/PROJECT3-MERN/images/DELETE.png)
 
 ## STEP 2 - Frontend creation
 
     npx create-react-app client
     npm install concurrently --save-dev
     npm install nodemon --save-dev
-![package update](/PROJECT3-MERN/images/packagejson)
+![package update](/PROJECT3-MERN/images/packagejson.png)
 
     cd client
     nano package.json
@@ -96,7 +96,7 @@ Add the key value:
 "proxy":"http://localhost:5000"
 
     npm run dev
-![NPM RUN](/PROJECT3-MERN/images/npm_run_dev)
+![NPM RUN](/PROJECT3-MERN/images/npm_run_dev.png)
 
 ### Creating React Components:
 
@@ -114,7 +114,7 @@ Then you need to modify the components by adding the necesary code.
 
 For this particular app, the code added produce the following output:
 
-![To Do APP](/PROJECT3-MERN/images/ToDo_app_JE)
+![To Do APP](/PROJECT3-MERN/images/ToDo_app_JE.png)
 
 
     
