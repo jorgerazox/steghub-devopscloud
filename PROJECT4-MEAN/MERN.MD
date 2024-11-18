@@ -56,7 +56,7 @@ Express & Mongoose installation:
 
     sudo npm install express mongoose
 
-Create **/app** structure and **/routes** to server:
+Create **/app** structure and **routes.js** to server:
 
 ![BookAppsDir](/PROJECT4-MEAN/images/BooksAppDir.png)
 

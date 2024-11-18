@@ -124,13 +124,16 @@ Load balancing ensures that application resources are used efficiently by distri
 
 ### **Advanced Load Balancing Techniques**
 **Global Server Load Balancing (GSLB):**
-    -   Distributes traffic across multiple geographically distributed data centers.
+- Distributes traffic across multiple geographically distributed data centers.
+
 **Sticky Sessions (Session Persistence):**
-    -   Ensures that requests from a particular client are routed to the same server through cookies or IP hashing.
+- Ensures that requests from a particular client are routed to the same server through cookies or IP hashing.
+
 **Health Checks:**
-    -   Regularly monitors the health of servers to ensure traffic is only routed to healthy nodes.
-    -   Types: TCP ping, HTTP/HTTPS status codes.
-**Failover:**
-    -   Automatically redirects traffic to a backup server if a primary server fails.
+-   Regularly monitors the health of servers to ensure traffic is only routed to healthy nodes. Types: TCP ping, HTTP/HTTPS status codes.
+ 
+ **Failover:**
+ - Automatically redirects traffic to a backup server if a primary server fails.
+
 **DNS Load Balancing:**
-    -   Uses DNS to distribute traffic by resolving a domain name to different IP addresses.
+- Uses DNS to distribute traffic by resolving a domain name to different IP addresses.
